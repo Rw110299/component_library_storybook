@@ -1,0 +1,62 @@
+{
+  "name": "component_library_storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "jest": {
+  "testEnvironment": "jsdom",
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+  "moduleNameMapper": {
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+  }
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rw110299/component_library_storybook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rw110299/component_library_storybook/issues"
+  },
+  "homepage": "https://github.com/Rw110299/component_library_storybook#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@chromatic-com/storybook": "^4.0.1",
+    "@storybook/addon-a11y": "^9.0.16",
+    "@storybook/addon-actions": "^9.0.8",
+    "@storybook/addon-docs": "^9.0.16",
+    "@storybook/addon-links": "^9.0.16",
+    "@storybook/addon-onboarding": "^9.0.16",
+    "@storybook/addon-vitest": "^9.0.16",
+    "@storybook/addons": "^7.6.17",
+    "@storybook/react": "^9.0.16",
+    "@storybook/react-vite": "^9.0.16",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "babel-jest": "^30.0.4",
+    "gh-pages": "^6.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.0.4",
+    "jest-environment-jsdom": "^30.0.4",
+    "playwright": "^1.53.2",
+    "prop-types": "^15.8.1",
+    "storybook": "^9.0.16",
+    "storybook-deployer": "^2.8.12",
+    "vitest": "^3.2.4"
+  }
+}
